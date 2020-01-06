@@ -63,7 +63,7 @@ ENDL
   # SQlite database setup
   mkdir -p $SQLITE_DB_PATH
   touch $SQLITE_DB_PATH$SQLITE_DB_FILE
-  chown www-data:www-data $SQLITE_DB_PATH$SQLITE_DB_FILE
+  chown -R www-data:www-data $SQLITE_DB_PATH
 
   # Wordpress config
   chown www-data:www-data /usr/share/nginx/www/wp-config.php
